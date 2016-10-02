@@ -1,0 +1,12 @@
+<?php
+    # Création d'une variable globale.
+    $this->class = 'test2';
+?>
+<article>
+    <?php
+        echo $this->renderTemplate ('html/header', array (
+            'title'   => 'Test 2',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        ));
+    ?>
+</article>

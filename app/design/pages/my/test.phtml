@@ -1,0 +1,39 @@
+<?php
+    # Création d'une variable globale.
+    $this->class = 'test';
+    $this->activeMenu = $activeMenu;
+?>
+<article>
+    <?php
+        echo $this->renderTemplate ('html/header', array (
+            'title'   => 'Test',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        ));
+    ?>
+
+    <?php if ($this->hasErrorMessages ()):?>
+        <div class="alert alert-danger" role="alert">
+            <strong>Attention !</strong>
+            <?php echo implode ('<br />', $this->errorMessages ());?>
+        </div>
+    <?php endif;?>
+
+    <?php if ($this->hasSuccessMessages ()):?>
+        <div class="alert alert-success" role="alert">
+            <strong>Supper !</strong>
+            <?php echo implode ('<br />', $this->successMessages ());?>
+        </div>
+    <?php endif;?>
+
+    <?php if (isset ($id)):?>
+        <p><strong>Un identifiant a été passé dans l'URL:</strong> <?php echo $id;?></p>
+    <?php endif;?>
+
+    <form class="form-inline" method="POST" action="/my/save/10?test=1">
+        <div class="form-group">
+            <label class="sr-only" for="identifiant">Identifiant</label>
+            <input type="text" class="form-control" id="identifiant" name="identifiant" placeholder="Identifiant" />
+        </div>
+        <button type="submit" class="btn btn-default">Envoyer</button>
+    </form>
+</article>

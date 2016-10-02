@@ -1,0 +1,54 @@
+<?php
+    # Utilisation d'un autre layout.
+    $this->layout ()->set ('homepage');
+
+    # Création d'une variable globale.
+    $this->metaTitle = "Titre de la page d'accueil";
+    $this->metaDescription = "Description de la page d'accueil";
+    $this->class = 'homepage';
+
+    # Ajout d'un fichier CSS.
+    $this->design ()->addCss ('head', 'homepage.css');
+?>
+<article>
+    <?php
+        echo $this->renderTemplate ('html/header', array (
+            'title'   => 'Homepage',
+            'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        ));
+    ?>
+
+    <p class="text-center">
+        <img src="<?php echo $this->imageUrl ('photo.png');?>" alt="Adrien RUIZ" class="img-circle" />
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa turpis, aliquet eu
+        diam non, egestas efficitur ligula. Ut in eleifend nisi. Vivamus at iaculis lectus, ac
+        iaculis leo. Duis maximus ornare consectetur. Ut lacinia maximus purus, in sagittis leo
+        accumsan non. Ut ut rhoncus mi. Suspendisse potenti. Nam laoreet augue id ex condimentum,
+        non blandit libero feugiat. Nam ac viverra velit, at mollis lacus. Vivamus vitae euismod metus.
+        Cras mollis aliquam enim, commodo malesuada orci mollis eu. Cras felis felis, consequat a
+        sodales a, lacinia ac tortor. Vivamus sit amet aliquam nibh.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa turpis, aliquet eu
+        diam non, egestas efficitur ligula. Ut in eleifend nisi. Vivamus at iaculis lectus, ac
+        iaculis leo. Duis maximus ornare consectetur. Ut lacinia maximus purus, in sagittis leo
+        accumsan non. Ut ut rhoncus mi. Suspendisse potenti. Nam laoreet augue id ex condimentum,
+        non blandit libero feugiat. Nam ac viverra velit, at mollis lacus. Vivamus vitae euismod metus.
+        Cras mollis aliquam enim, commodo malesuada orci mollis eu. Cras felis felis, consequat a
+        sodales a, lacinia ac tortor. Vivamus sit amet aliquam nibh.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa turpis, aliquet eu
+        diam non, egestas efficitur ligula. Ut in eleifend nisi. Vivamus at iaculis lectus, ac
+        iaculis leo. Duis maximus ornare consectetur. Ut lacinia maximus purus, in sagittis leo
+        accumsan non. Ut ut rhoncus mi. Suspendisse potenti. Nam laoreet augue id ex condimentum,
+        non blandit libero feugiat. Nam ac viverra velit, at mollis lacus. Vivamus vitae euismod metus.
+        Cras mollis aliquam enim, commodo malesuada orci mollis eu. Cras felis felis, consequat a
+        sodales a, lacinia ac tortor. Vivamus sit amet aliquam nibh.
+    </p>
+</article>

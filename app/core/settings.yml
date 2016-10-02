@@ -1,0 +1,28 @@
+
+# Comme il s'agit d'un settings du core, ce fichier ne dispose pas
+# d'un système de fallback interne, et doit être modifié uniquement
+# en cas d'évolution du core.
+
+layout:
+    default: 'default'
+
+template:
+    type: '.phtml'
+    homepage: 'homepage'
+    error: 'error'
+
+path:
+    app: 'app'
+    design: 'design'
+    layouts: 'layouts'
+    pages: 'pages'
+    html: 'html'
+    controllers: 'controllers'
+
+web:
+    images: 'images'
+    javascripts: 'javascripts'
+    stylesheets: 'stylesheets'
+
+key:
+    controller: 'Controller'

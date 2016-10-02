@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Menu principal</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Site internet</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <?php $active = isset ($this->activeMenu) ? $this->activeMenu : null;?>
+                <li<?php if ($active === 'page'):?> class="active"<?php endif;?>><a href="/page">Une page</a></li>
+                <li<?php if ($active === 'my/test'):?> class="active"<?php endif;?>><a href="/my/test/10">Un test</a></li>
+                <li<?php if ($active === 'my/test2'):?> class="active"<?php endif;?>><a href="/my/test2/10">Un test 2</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

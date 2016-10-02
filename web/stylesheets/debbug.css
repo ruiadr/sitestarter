@@ -1,0 +1,54 @@
+
+#debbug {display: none;}
+
+@media screen and (min-width: 800px) {
+    #debbug {
+        background-color: rgba(238, 238, 238, 1.0);
+        border-right: solid 1px #AAA;
+        border-top: solid 1px #AAA;
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: 0;
+        max-width: 800px;
+        opacity: 0.5;
+        padding: 5px 20px;
+        position: fixed;
+        z-index: 9999;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #debbug h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    #debbug p {
+        background-color: #FFF;
+        display: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 400;
+        line-height: 1.6em;
+        max-height: 300px;
+        padding: 10px 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #debbug p span {display: block;}
+    #debbug p span.notice {color: rgb(238, 162, 54);}
+    #debbug p span.error {color: rgb(212, 63, 58);}
+    #debbug:hover {opacity: 1.0; padding: 20px;}
+    #debbug:hover h1 {border-bottom: solid 1px #CCC; font-size: 30px; margin-bottom: 20px;}
+    #debbug:hover p {display: block;}
+}

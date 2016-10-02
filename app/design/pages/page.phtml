@@ -1,0 +1,23 @@
+<?php
+    # Création d'une variable globale.
+    $this->activeMenu = 'page';
+?>
+<article>
+    <?php
+        echo $this->renderTemplate ('html/header', array (
+            'title' => 'Un exemple de page',
+            'content' => 'Cras felis felis, consequat a sodales a, lacinia ac tortor. Vivamus sit amet aliquam nibh.'
+        ));
+    ?>
+    <?php for ($i = 0; $i < 4; ++$i):?>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa turpis, aliquet eu
+            diam non, egestas efficitur ligula. Ut in eleifend nisi. Vivamus at iaculis lectus, ac
+            iaculis leo. Duis maximus ornare consectetur. Ut lacinia maximus purus, in sagittis leo
+            accumsan non. Ut ut rhoncus mi. Suspendisse potenti. Nam laoreet augue id ex condimentum,
+            non blandit libero feugiat. Nam ac viverra velit, at mollis lacus. Vivamus vitae euismod metus.
+            Cras mollis aliquam enim, commodo malesuada orci mollis eu. Cras felis felis, consequat a
+            sodales a, lacinia ac tortor. Vivamus sit amet aliquam nibh.
+        </p>
+    <?php endfor;?>
+</article>

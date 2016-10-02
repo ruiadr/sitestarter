@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <?php echo $this->renderTemplate ('html/head');?>
+    <body id="my-test" class="<?php echo $this->class;?>">
+        <?php echo $this->renderTemplate ('html/navbar');?>
+        <div class="container">
+            <?php echo $this->getContent ();?>
+        </div>
+        <?php echo $this->renderTemplate ('html/footer');?>
+        <?php echo $this->renderTemplate ('html/javascript');?>
+    </body>
+</html>
