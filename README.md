@@ -48,8 +48,8 @@ proposera les routes `http://MON.DOMAINE.COM/my/test` et `http://MON.DOMAINE.COM
 ### Exemples
 
 Le dépôt est mis à disposition avec différents exemples:
-- Création de routes en mode "fichier"
-- Création de routes en mode "Controleur"
-- Utilisation de différents layouts
-- Utilisation de variables globales
-- Utilisation de ressources statiques (CSS / JS / Images) à l'aide de fichiers de configuration (.yml)
+- Création de routes en mode "fichier".
+- Création de routes en mode "Controleur".
+- Utilisation de différents layouts.
+- Utilisation de variables globales.
+- Utilisation de ressources statiques (CSS / JS / Images) à l'aide de fichiers de configuration (.yml).
